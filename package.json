@@ -1,0 +1,19 @@
+{
+  "name": "auth-via-google",
+  "version": "1.0.0",
+  "description": "auth using google",
+  "main": "index.js",
+  "engines": {
+    "node": "10.15.1",
+    "npm": "6.9.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "fayssal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
+}
