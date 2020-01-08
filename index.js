@@ -5,6 +5,8 @@ const keys = require("./config/keys");
 
 const app = express();
 
+//using the passport module with the google strategy
+// also providing the clientID and client secret and the callBackUrl
 passport.use(
   new GoogleStrategy(
     {
@@ -18,6 +20,7 @@ passport.use(
   )
 );
 
+//the rout that start the oauth with the goole auth
 app.get(
   "/auth/google",
   passport.authenticate("google", {
@@ -25,6 +28,7 @@ app.get(
   })
 );
 
+//the callBack rout
 app.get(
   "/auth/google/callback",
   passport.authenticate("google", {
