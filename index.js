@@ -33,12 +33,3 @@ authRoutes(app);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
-
-// const MongoClient = require('mongodb').MongoClient;
-// const uri = "mongodb+srv://admin-fayssal:MAC13dell45@cluster0-0cwlt.mongodb.net/test?retryWrites=true&w=majority";
-// const client = new MongoClient(uri, { useNewUrlParser: true });
-// client.connect(err => {
-//   const collection = client.db("test").collection("devices");
-//   // perform actions on the collection object
-//   client.close();
-// });
